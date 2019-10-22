@@ -6,7 +6,7 @@
 
 <ion-content>
 
-  <form [formGroup]="todoForm" (ngSubmit)="todoSubmit(todoForm.value)">
+  <form [formGroup]="todoForm" (ngSubmit)="todoSubmit(todoForm.value.todo)">
     <ion-input type="text" formControlName="todo" placeholder="Add Todo"></ion-input>
     <!-- <ion-icon name="add" (click)="addTodo(todoForm.value.todo)" [disabled]="!todoForm.valid"></ion-icon> -->
     <ion-button expand="full" (click)="addTodo(todoForm.value.todo)" [disabled]="!todoForm.valid">Add</ion-button>

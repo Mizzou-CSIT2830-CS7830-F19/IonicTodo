@@ -1,5 +1,7 @@
 {
   "name": "IonicTodo",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
